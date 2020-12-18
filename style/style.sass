@@ -1,0 +1,272 @@
+$color-black: #000000
+$color-gray: #b3b3b3
+$color-blue: #1519FF
+$color-white: #ffffff
+$color-light-gray: #F4F4F4
+
+body
+  font-family: "Helvetica Neue", "Arial", sans-serif
+  color: #676767
+  font-size: 16px
+
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    font-size: 12px
+
+a
+  color: $color-black
+  text-decoration: none
+
+h2, h4
+  font-family: 'Space Grotesk', sans-serif
+  color: $color-black
+  text-transform: uppercase
+  font-weight: 400
+
+h2
+  font-size: 72px
+  background-color: $color-blue
+  color: $color-white
+  display: table
+  padding-left: 6px
+  padding-right: 6px
+  margin-top: 48px
+  margin-bottom: 48px
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+    font-size: 35px
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    font-size: 30px
+    margin-top: 34px
+    margin-bottom: 34px
+
+h4
+  font-size: 20px
+  margin-top: 24px
+  margin-bottom: 18px
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+    font-size: 18px
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    font-size: 14px
+    margin-bottom: 4px
+
+.page-wrapper
+  min-height: 100%
+  margin: auto
+  padding-left: 48px
+  padding-right: 48px
+  min-width: 272px
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+    padding-left: 32px
+    padding-right: 32px
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    padding-left: 24px
+    padding-right: 24px
+
+.row
+  display: flex
+  flex-wrap: wrap
+  margin-left: -15px
+  margin-right: -15px
+
+.item
+  flex: calc(50% - 30px)
+  margin: 0px 0px 33px 0px
+  margin-left: 15px
+  margin-right: 15px
+  height: max-content
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+    flex: 100%
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    flex: 100%
+  &__img
+    width: 294px
+    height: 294px
+    position: relative
+    overflow: hidden
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      width: 343px
+      height: 343px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      width: calc(100vw - 48px)
+      height: calc(100vw - 48px)
+      margin-bottom: 48px
+    &_left
+      float: left
+      @media screen and (min-width: 0px) and (max-width: 767px)
+        float: none
+    &_right
+      float: right
+      @media screen and (min-width: 0px) and (max-width: 767px)
+        float: none
+    &_cirkle img
+      border-radius: 50%
+    &_cirkle-left img
+      border-radius: 150px 0px 0px 0px
+      @media screen and (min-width: 0px) and (max-width: 767px)
+        border-radius: 51% 0px 0px 0px
+    &_cirkle-right img
+      border-radius: 0px 150px 0px 0px
+      @media screen and (min-width: 0px) and (max-width: 767px)
+        border-radius: 0px 51% 0px 0px
+  & img
+    object-fit: cover
+    width: 100%
+    height: 100%
+  &__description
+    border-top: 1px solid #b3b3b3
+    display: flex
+    flex-direction: column
+    &_right
+      padding-left: 30px
+      @media screen and (min-width: 0px) and (max-width: 767px)
+        padding-left: 0px
+    &_left
+      padding-right: 30px
+      @media screen and (min-width: 0px) and (max-width: 767px)
+        padding-right: 0px
+  &__profile
+    margin-bottom: 24px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      margin-bottom: 10px
+  &__time
+    color: $color-black
+    font-weight: 700
+    margin-bottom: 12px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      margin-bottom: 8px
+  &__text
+    line-height: 170%
+  &__how
+    font-size: 20px
+    padding-right: 15px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 18px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 14px
+  &__attention
+    font-size: 24px
+    line-height: 170%
+    margin-bottom: 72px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 16px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 16px
+      margin-bottom: 0px
+  &__form-row
+    border-bottom: 1px solid $color-gray
+    margin-bottom: 24px
+  &__input-text
+    width: 100%
+    border: none
+    font-size: 16px
+    height: 27px
+    color: $color-gray
+    margin-bottom: 13px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 12px
+      height: 20px
+      margin-bottom: 8px
+  &__btn
+    font-family: "Space Grotesk", sans-serif
+    font-weight: 400
+    font-size: 30px
+    background-color: transparent
+    border: none
+    outline: none
+    text-decoration: underline
+    padding: 0
+    cursor: pointer
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 20px
+  &_form
+    @media screen and (min-width: 0px) and (max-width: 767px)
+    order: 3
+
+.ticket
+  background-color: $color-light-gray
+  padding: 48px
+  @media screen and (min-width: 768px) and (max-width: 1200px)
+    padding: 32px 16px
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    padding: 24px 16px
+  &__txt
+    margin-top: 0px
+    margin-bottom: 32px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 14px
+      margin-bottom: 20px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 12px
+      margin-bottom: 24px
+  &__price
+    display: inline-block
+    width: 240px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      width: auto
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      width: auto
+      font-size: 12px
+  &__sum
+    font-size: 52px
+    color: $color-black
+    margin-bottom: 28px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 32px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 30px
+  &__period
+    font-size: 24px
+    color: $color-black
+    margin-bottom: 48px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 16px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 16px
+  &__disc
+    display: inline-block
+    padding: 10px 20px
+    width: 153px
+    height: 53px
+    background: #FEF653
+    vertical-align: top
+    margin-top: 60px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      width: 90px
+      height: 41px
+      margin-top: 40px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      width: 65px
+      height: 41px
+      margin-top: 40px
+  &__term
+    font-size: 14px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 10px
+    @media screen and (min-width: 0px) and (max-width: 767px)
+      font-size: 8px
+  &__percent
+    font-family: "Space Grotesk", sans-serif
+    font-weight: 500
+    color: $color-black
+    font-size: 20px
+    font-weight: 500
+    margin-bottom: 35px
+    @media screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 16px
+  &__install
+    font-size: 14px
+    margin-top: 0px
+    margin-bottom: 20px
+  &__price
+    font-size: 24px
+    margin-top: 0px
+
+.row_tile
+  display: block
+  column-count: 2
+  column-gap: 0
+  @media screen and (min-width: 0px) and (max-width: 767px)
+    display: flex
+    column-count: 1
+
+.item_tile
+  break-inside: avoid
